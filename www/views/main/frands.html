@@ -1,0 +1,72 @@
+<ion-view title="Frands" id="page1" class=" " ng-init="updateInfo()" ng-controller="frandsCtrl">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+
+  <ion-content padding="true" class="has-header">
+
+    <div ng-if="tag.id">
+      hellooo
+      {{endLoad}}
+    </div>
+
+    {{tag.ndefMessage}}
+  <!--{{tag.ndefMessage}}-->
+
+  <!--<div ng-if="!tag.id">-->
+    <!--<div class="card">-->
+      <!--<div class="item item-text-wrap center">-->
+        <!--Scan a tag to begin.-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+    <!--{{tag.ndefMessage|decodePayload}}-->
+
+  <!--<div ng-if="tag.id">-->
+
+    <!--<div class="card">-->
+      <!--<div class="item item-text-wrap">-->
+        <!--<dl>-->
+          <!--<dt>Tag Id</dt>-->
+          <!--<dd>{{ tag.id | bytesToHexString }}</dd>-->
+          <!--<dt>Tag Type</dt>-->
+          <!--<dd>{{ tag.type }}</dd>-->
+          <!--&lt;!&ndash; TODO techTypes &ndash;&gt;-->
+          <!--<dt>Max Size</dt>-->
+          <!--<dd>{{ tag.maxSize }} bytes</dd>-->
+          <!--<dt>Is Writable</dt>-->
+          <!--<dd>{{ tag.isWritable }}</dd>-->
+          <!--<dt>Can Make Read Only</dt>-->
+          <!--<dd>{{ tag.canMakeReadOnly }}</dd>-->
+        <!--</dl>-->
+        <!--<div class="card" ng-repeat=" record in tag.ndefMessage">-->
+          <!--<div class="item item-divider">-->
+            <!--Record {{$index + 1}} <br/>-->
+          <!--</div>-->
+          <!--<div class="item item-text-wrap">-->
+            <!--<dl>-->
+              <!--<dt>TNF</dt>-->
+              <!--<dd>{{ record.tnf | tnfToString }}</dd>-->
+              <!--<dt>Record Type</dt>-->
+              <!--<dd>{{ record.type | bytesToString }}</dd>-->
+
+              <!--<dt ng-if="record.id">Record Id</dt>-->
+              <!--<dd ng-if="record.id">{{ record.id | bytesToString }}</dd>-->
+              <!--<dt>Payload</dt>-->
+
+              <!--<dd>{{ record | decodePayload }}</dd>-->
+              <!--{{record| decodePayload }}-->
+            <!--</dl>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+    <button id="logout" class=" button button-positive  button-block " ng-click="logout()"> log out </button>
+
+  </ion-content>
+</ion-view>
+

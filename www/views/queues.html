@@ -1,0 +1,15 @@
+<ion-view title="Queues" id="page7">
+    <ion-content padding="true" class="has-header" ng-click="increase();showAlert()">
+      {{tap}}
+      <div ng-show="tap==0" >
+      <img ng-src = "img/qrkode.png" style="  left: 120px;">
+      </div>
+        <ion-list id="queues-list3" ng-if=" tap > 0 ">
+            <ion-item class="balanced" id="queues-list-item7"> Laurier Starbucks
+              <img ng-src = "img/sb-logo.png" style=" position: absolute; right: 20px; bottom: 7px;">
+              <br>
+              <dd>Position: 15 </dd>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
